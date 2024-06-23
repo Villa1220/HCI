@@ -12,58 +12,78 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #003366;
     color: #fff;
 }
 
-header .logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 65px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: bold;
+    line-height: 1;
 }
 
-header .titulo {
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-header .botones button {
+.header-btn {
     background-color: #3399FF;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: 'Lato', sans-serif;
     border-radius: 15px;
-}
-
-header .botones button:hover {
-    background-color: #F2F2F2;
-    color:#000000;
-}
-
-footer {
     text-align: center;
-    padding: 20px;
-    background-color: #003366;
+    padding: 10px;
+    width: 3cm;
+}
+
+.header-btn:hover {
+    background-color: #F2F2F2;
+    color: #000;
+}
+
+.reservas-btn {
+    justify-self: center;
+    padding: 10px;
+    width: 3cm;
+}
+
+.mi-vuelo-btn {
+    justify-self: center;
+    padding: 10px;
+    width: 3cm;
+}
+
+.iniciar-sesion-btn {
+    justify-self: center;
+    padding: 10px;
+    width: 3cm;
+}
+
+.menu-btn {
+    justify-self: end;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    padding: 5px;
+    width: 1cm;
 }
-
-footer p {
-    margin: 5px 0;
-}
-
 
 main {
     padding: 20px;
@@ -101,3 +121,4 @@ button.secondary {
 button.secondary:hover {
     background-color: #CC5200;
 }
+
