@@ -1,12 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const loginBtn = document.getElementById('loginBtn');
-    const registerBtn = document.getElementById('registerBtn');
-
-    loginBtn.addEventListener('click', function() {
-        alert('Iniciar Sesión clicked!');
-    });
-
-    registerBtn.addEventListener('click', function() {
-        alert('Registrarse clicked!');
-    });
+document.getElementById("reservasBtn").addEventListener("click", function() {
+    window.location.href = "reservas.html";
 });
+
+document.getElementById("miVueloBtn").addEventListener("click", function() {
+    window.location.href = "mivuelo.html";
+});
+
+document.getElementById("iniciarSesionBtn").addEventListener("click", function() {
+    window.location.href = "iniciarsesion.html";
+});
+
+document.querySelector(".menu-btn").addEventListener("click", function() {
+    alert("¡Menú desplegado!");
+});
+
+

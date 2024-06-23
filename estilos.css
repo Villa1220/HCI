@@ -8,14 +8,13 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     background-color: #F2F2F2;
-    line-height: 1.6;
 }
 
 header {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     align-items: center;
-    padding: 25px;
+    padding: 5px;   
     background-color: #003366;
     color: #fff;
 }
@@ -56,12 +55,6 @@ header {
     color: #000;
 }
 
-.reservas-btn, .mi-vuelo-btn, .iniciar-sesion-btn {
-    justify-self: center;
-    padding: 10px;
-    width: 3cm;
-}
-
 .menu-btn {
     justify-self: end;
     font-size: 30px;
@@ -74,9 +67,9 @@ header {
 }
 
 main {
-    padding: 20px;
-    background-color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
     color: #333;
+    background-color: #F2F2F2;
 }
 
 section {
@@ -84,7 +77,7 @@ section {
     padding: 20px;
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 a {
@@ -98,13 +91,12 @@ a:hover {
 }
 
 footer {
-    padding: 2px;
     background-color: #003366;
     color: #fff;
     position: fixed;
     bottom: 0;
-    width: 100%;
     font-family: 'Lato', sans-serif;
+    width:100%;
 }
 
 .footer-content {
@@ -123,7 +115,7 @@ footer {
 .footer-column img {
     width: 65px;
     height: auto;
-    margin-bottom: px;
+    margin-bottom: 10px;
 }
 
 .centered {
@@ -164,3 +156,20 @@ footer {
     transform: scale(1.1); 
     color: #3399FF; 
 }
+
+.main-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    text-align: center;
+}
+
+.frase {
+    flex: 1 0 300px; 
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+
