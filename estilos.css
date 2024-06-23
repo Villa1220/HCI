@@ -109,16 +109,38 @@ a:hover {
     color: #003366;
 }
 
-button.secondary {
-    background-color: #FF6600;
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 5px;
+    background-color: #003366;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
-button.secondary:hover {
-    background-color: #CC5200;
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column img {
+    margin-bottom: 10px;
+    width: 65px;
+    height: auto;
+    justify-self:flex-end;
+}
+
+.footer-column.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column.right {
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
