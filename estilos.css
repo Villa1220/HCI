@@ -56,19 +56,7 @@ header {
     color: #000;
 }
 
-.reservas-btn {
-    justify-self: center;
-    padding: 10px;
-    width: 3cm;
-}
-
-.mi-vuelo-btn {
-    justify-self: center;
-    padding: 10px;
-    width: 3cm;
-}
-
-.iniciar-sesion-btn {
+.reservas-btn, .mi-vuelo-btn, .iniciar-sesion-btn {
     justify-self: center;
     padding: 10px;
     width: 3cm;
@@ -110,10 +98,7 @@ a:hover {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    padding: 5px;
+    padding: 2px;
     background-color: #003366;
     color: #fff;
     position: fixed;
@@ -122,25 +107,33 @@ footer {
     font-family: 'Lato', sans-serif;
 }
 
+.footer-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2px;
+}
+
 .footer-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-column img {
-    margin-bottom: 10px;
     width: 65px;
     height: auto;
-    justify-self:flex-end;
+    margin-bottom: px;
 }
 
-.footer-column.centered {
+.centered {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer-column.right {
-    justify-content: flex-end;
-    align-items: flex-end;
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
 }
-
