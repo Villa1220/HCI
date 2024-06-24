@@ -102,11 +102,8 @@ function mostrarContenido(idContenido) {
     var contenidoSecreto = document.getElementById('contenidoSecreto');
     var contenidoRastreo = document.getElementById('contenidoRastreo');
     
-    // Ocultar ambos contenidos antes de mostrar el seleccionado
     contenidoSecreto.style.display = 'none';
     contenidoRastreo.style.display = 'none';
-
-    // Mostrar el contenido seleccionado
     var contenidoAMostrar = document.getElementById(idContenido);
     if (contenidoAMostrar) {
         contenidoAMostrar.style.display = 'block';

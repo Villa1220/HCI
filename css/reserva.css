@@ -1,4 +1,3 @@
-/* Estilos para la sección principal */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -41,7 +40,7 @@
   .full-width-btn:hover {
       font-family: "Lato", sans-serif;
       background-color: #ffffff;
-      color: black; /* Cambiamos el color al hacer hover */
+      color: black; 
       border: 1px solid #020202;
     }
   
@@ -156,11 +155,66 @@
   
     .Contenido-secreto {
         font-family: 'Lato', sans-serif;
-        display: none; /* Oculta el contenido por defecto */
-        padding: 20px; /* Añade relleno al contenido */
-        border-radius: 5px; /* Bordes redondeados */
-        margin-top: 20px; /* Espacio superior */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        box-sizing: border-box; /* Incluir padding y border en el ancho total */
+        display: none; 
+        padding: 20px; 
+        border-radius: 5px; 
+        margin-top: 20px; 
+        width: 100%; 
+        box-sizing: border-box; 
     }
+  
+    @media (max-width: 1200px) {
+      .grid-container {
+          grid-template-columns: repeat(3, 1fr);
+          font-size: 30px;
+      }
+  }
+  
+  @media (max-width: 992px) {
+      .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+          font-size: 25px;
+      }
+  
+      .formulario-seccion .grid-container {
+          grid-template-columns: 1fr;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .grid-container {
+          grid-template-columns: 1fr;
+          font-size: 20px;
+      }
+  
+      .full-width-btn {
+          font-size: 18px;
+      }
+  
+      #fechaInput {
+          font-size: 14px;
+      }
+  
+      #fechaIconBtn {
+          font-size: 14px;
+      }
+  
+      .formulario-seccion button {
+          font-size: 18px;
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .grid-container {
+          gap: 10px;
+      }
+  
+      .full-width-btn {
+          font-size: 16px;
+      }
+  
+      .formulario-seccion input[type="text"] {
+          font-size: 14px;
+      }
+  }
   
