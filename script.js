@@ -20,3 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el efecto de agrandamiento desde el primer índice
     enlargeImage(0);
 });
+
+// script.js
+// script.js
+// Función para redirigir a la página de Reservas
+document.getElementById('reservasBtn').addEventListener('click', function() {
+    window.location.href = '../views/reservas.html';
+});
+
+// Función para redirigir a la página de Mi Vuelo
+document.getElementById('miVueloBtn').addEventListener('click', function() {
+    window.location.href = '../views/mivuelo.html';
+});
+
+
+
