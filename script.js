@@ -20,3 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el efecto de agrandamiento desde el primer índice
     enlargeImage(0);
 });
+
+// script.js
+// script.js
+
+
+
+
+
