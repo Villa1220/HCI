@@ -48,6 +48,8 @@ header {
     text-align: center;
     padding: 10px;
     width: 3cm;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .header-btn:hover {
@@ -82,17 +84,24 @@ section {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
-    color: #3399FF;
     text-decoration: none;
+    color: #ffffff;
     transition: color 0.3s ease;
+    background: none; 
+    cursor: pointer; 
+    font-family: 'Lato', sans-serif;
+}
+a:hover {
+    color: #000000; /* Al hacer hover, mostramos el color del texto */
 }
 
-a:hover {
-    color: #003366;
-}
+
+
+
 
 footer {
     background-color: #003366;
@@ -101,6 +110,7 @@ footer {
     bottom: 0;
     font-family: 'Lato', sans-serif;
     width:100%;
+    
 }
 
 .footer-content {
@@ -108,12 +118,14 @@ footer {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 2px;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;   
+    align-items: flex-start;
+    font-family: 'Lato', sans-serif;   
 }
 
 .centered {
@@ -121,27 +133,32 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-column.centered ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-column.centered ul li {
     margin-bottom: 5px;
     transition: transform 0.3s ease;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer-column.centered ul li:hover {
     transform: scale(1.1); 
     color: #3399FF; 
+    font-family: 'Lato', sans-serif;
 }
 
 .frase {
@@ -188,9 +205,6 @@ footer {
     overflow: hidden; /* Ocultar cualquier desbordamiento */
 }
 
-a{
-    background: white;
-}
 
 
 

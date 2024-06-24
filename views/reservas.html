@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empresa Seria</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reserva.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/reserva.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
+
 <body>
     <header>
         <a href="/index.html">
             <div class="logo-container">
-                <img src="../imagenes/logo.png" alt="Logo" class="logo-img">
+                <img src="../imagenes/logo.png" alt="Logo" class="logo-img" />
                 <span class="logo-text">
-                    Tu<br><span style="line-height: 0;">Vuelo </span>
+                    Tu<br /><span style="line-height: 0">Vuelo </span>
                 </span>
             </div>
         </a>
@@ -24,46 +29,73 @@
         <button id="miVueloBtn" class="header-btn mi-vuelo-btn">
             <a href="mivuelo.html">Mi Vuelo</a>
         </button>
-        <button id="iniciarSesionBtn" class="header-btn iniciar-sesion-btn">Iniciar Sesión</button>
+        <button id="iniciarSesionBtn" class="header-btn iniciar-sesion-btn">
+            Iniciar Sesión
+        </button>
         <button class="header-btn menu-btn">≡</button>
     </header>
 
-    <div class="additional-header">
-        <div class="option">ENCONTRAR VUELO</div>
-        <div class="option">Normal</div>
-        <div class="option">Ida y Vuelta</div>
-    </div>
-    
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <p style="text-align: center">Encontrar Vuelo</p>
+            </div>
+            <div class="grid-item">
+                <button id="normalBtn" class="full-width-btn">Normal</button>
+              </div>
+              <div class="grid-item">
+                <button id="idaVueltaBtn" class="full-width-btn">Ida y Vuelta</button>
+              </div>
+              
+            <div class="grid-item">
+                <img src="../imagenes/encontrar.jpg" alt="Imagen" class="centered-img" />
+            </div>
+        </section>
 
-    <main class="main-container">
-        <div class="parent">
-            <div>
-                <div class="grid-container">
-                    <input type="text" placeholder="Campo 1">
-                    <input type="text" placeholder="Campo 2">
-                    <input type="text" placeholder="Campo 3">
-                    <input type="text" placeholder="Campo 4">
+        <section class="formulario-seccion">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <input type="text" placeholder="Código Vuelo" />
                 </div>
-                <div class="calendar-container">
-                    <div class="calendar"></div>
+                <div class="grid-item">
+                    <input type="text" placeholder="Usuario" />
+                </div>
+                <div class="grid-item">
+                    <input type="text" placeholder="Origen" />
+                </div>
+                <div class="grid-item">
+                    <input type="text" placeholder="Destino" />
+                </div>
+                <div class="grid-item">
+                    <div class="date-input-container">
+                        <input type="text" id="fechaInput" placeholder="Fecha" />
+                        <button id="fechaIconBtn">
+                            <i class="far fa-calendar-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <button id="buscarBtn" onclick="mostrarContenido('contenidoSecreto')">BUSCAR</button>
                 </div>
             </div>
-            <div class="blank-space1">
-                <h1>espacio 1</h1>
+        </section>
+
+        <section>
+            <div id="contenidoSecreto" class="Contenido-secreto" style="text-align: center;">
+                <img src="../imagenes/busqueda.png" alt="Buscar">
             </div>
-            <div class="blank-space2">
-                <h1>espacio 2</h1>
-            </div>
-        </div>
+        </section>
+          
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-column" style="align-items: center;">
+            <div class="footer-column" style="align-items: center">
                 <p>Búscanos en:</p>
-                <i class="fa-brands fa-facebook" style="font-size: 25px;"></i>
-                <i class="fa-brands fa-instagram" style="font-size: 25px;"></i>
-                <i class="fa-brands fa-x-twitter" style="font-size: 25px;"></i>
+                <i class="fa-brands fa-facebook" style="font-size: 25px"></i>
+                <i class="fa-brands fa-instagram" style="font-size: 25px"></i>
+                <i class="fa-brands fa-x-twitter" style="font-size: 25px"></i>
             </div>
             <div class="footer-column centered">
                 <p>Página Legal</p>
@@ -76,9 +108,9 @@
             <a href="/index.html">
                 <div class="footer-column centered">
                     <div class="logo-container">
-                        <img src="../imagenes/logo.png" alt="Logo" class="logo-img">
+                        <img src="../imagenes/logo.png" alt="Logo" class="logo-img" />
                         <span class="logo-text">
-                            Tu<br><span style="line-height: 0;">Vuelo</span>
+                            Tu<br /><span style="line-height: 0">Vuelo</span>
                         </span>
                     </div>
                 </div>
@@ -88,7 +120,61 @@
             <p class="copyright">Todos los derechos reservados © Tu Vuelo 2024</p>
         </div>
     </footer>
-    
+
     <script src="/script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <script>
+        $(document).ready(function() {
+            $("#fechaIconBtn").click(function() {
+                $("#fechaInput").datepicker({
+                    dateFormat: 'dd/mm/yy', 
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
+                    changeMonth: true,
+                    changeYear: true
+                });
+            });
+        });
+        </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const normalBtn = document.getElementById("normalBtn");
+      const idaVueltaBtn = document.getElementById("idaVueltaBtn");
+      const buscarBtn = document.querySelector(".formulario-seccion button");
+      const resultado = document.querySelector(".gridresultado");
+  
+      normalBtn.addEventListener("click", function() {
+        normalBtn.classList.add("pressed");
+        idaVueltaBtn.classList.remove("pressed");
+      });
+  
+      idaVueltaBtn.addEventListener("click", function() {
+        idaVueltaBtn.classList.add("pressed");
+        normalBtn.classList.remove("pressed");
+      });
+  
+    });
+  </script>
+
+<script>
+    function mostrarContenido(idContenido) {
+        var contenidoSecreto = document.getElementById('contenidoSecreto');
+        contenidoSecreto.style.display = 'none';
+
+        var contenidoAMostrar = document.getElementById(idContenido);
+        if (contenidoAMostrar) {
+            contenidoAMostrar.style.display = 'block';
+        }
+    }
+    
+    
+        </script>
+  
+        
 </body>
+
+
 </html>
