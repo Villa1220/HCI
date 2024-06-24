@@ -3,35 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa Seria</title>
+    <title>Mi Vuelo - Tu Vuelo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mivuelo.css">
 </head>
 <body>
     <header>
-      <a href="/index.html">    <div class="logo-container">
-        <img src="../imagenes//logo.png" alt="Logo" class="logo-img" >
-        <span class="logo-text">
-            Tu<br><span style="line-height: 0;">Vuelo </span>
-        </span>
-        
-    </div></a>
-        <button id="reservasBtn" class="header-btn reservas-btn" ><a href="reservas.html">Reservas</a> </button>
+        <a href="/index.html">
+            <div class="logo-container">
+                <img src="../imagenes/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">
+                    Tu<br><span style="line-height: 0;">Vuelo</span>
+                </span>
+            </div>
+        </a>
+        <button id="reservasBtn" class="header-btn reservas-btn"><a href="reservas.html">Reservas</a></button>
         <button id="miVueloBtn" class="header-btn mi-vuelo-btn"><a href="mivuelo.html">Mi Vuelo</a></button>
         <button id="iniciarSesionBtn" class="header-btn iniciar-sesion-btn">Iniciar Sesión</button>
         <button class="header-btn menu-btn">≡</button>
     </header>
 
+    <main>
+        <section>
+            <div class="section-container" style="text-align: center;">
+                <h1>Mi Vuelo</h1>
+                <img src="../imagenes/avion.jpg" alt="Imagen de Vuelo">
+            </div>
+        </section>
+        <section>
+            <div class="section-container">
+                <div style="width: 25%;">
+                    <input type="text" placeholder="Código de Vuelo">
+                </div>
+                <div style="width: 25%; margin-left: 20px;">
+                    <input type="text" placeholder="Propietario">
+                </div>
+                <div style="width: 25%; margin-left: 20px;">
+                    <button id="buscarBtn" onclick="mostrarContenido('contenidoSecreto')">BUSCAR</button>
+                </div>
+                <div style="width: 25%; margin-left: 20px;">
+                    <button id="rastrearBtn" onclick="mostrarContenido('contenidoRastreo')">RASTREAR</button>
+                </div>
+                
+            </div>
 
-    <main class="main-container">
-      <h1>MI VUELO</h1>
+        </section>
+        <section>
+            <div id="contenidoSecreto" class="Contenido-secreto" style="text-align: center;">
+                <img src="../imagenes/buscar.png" alt="Buscar">
+            </div>
+            <div id="contenidoRastreo" class="Contenido-secreto">
+                <img src="../imagenes/rastreo.png" alt="Rastreo">
+            </div>
+        </section>
+
+    
+        
+        
     </main>
-    
-    
+
     <footer>
         <div class="footer-content">
-        
             <div class="footer-column" style="align-items: center;">
                 <p>Búscanos en:</p>
                 <i class="fa-brands fa-facebook" style="font-size: 25px;"></i>
@@ -46,21 +80,42 @@
                     <li>Aviso legal</li>
                 </ul>
             </div>
-         
-            <a href="/index.html">        <div class="footer-column centered">
-              <div class="logo-container">
-                  <img src="../imagenes/logo.png" alt="Logo" class="logo-img">
-                  <span class="logo-text">
-                      Tu<br><span style="line-height: 0.;">Vuelo</span>
-                  </span>
-              </div>
-          </div></a>
+            <a href="/index.html">
+                <div class="footer-column centered">
+                    <div class="logo-container">
+                        <img src="../imagenes/logo.png" alt="Logo" class="logo-img">
+                        <span class="logo-text">
+                            Tu<br><span style="line-height: 0;">Vuelo</span>
+                        </span>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="footer-bottom">
             <p class="copyright">Todos los derechos reservados © Tu Vuelo 2024</p>
         </div>
     </footer>
-    
+
     <script src="/script/script.js"></script>
+    <script>
+function mostrarContenido(idContenido) {
+    var contenidoSecreto = document.getElementById('contenidoSecreto');
+    var contenidoRastreo = document.getElementById('contenidoRastreo');
+    
+    // Ocultar ambos contenidos antes de mostrar el seleccionado
+    contenidoSecreto.style.display = 'none';
+    contenidoRastreo.style.display = 'none';
+
+    // Mostrar el contenido seleccionado
+    var contenidoAMostrar = document.getElementById(idContenido);
+    if (contenidoAMostrar) {
+        contenidoAMostrar.style.display = 'block';
+    }
+}
+
+
+
+    </script>
+
 </body>
 </html>
