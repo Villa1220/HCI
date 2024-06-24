@@ -177,42 +177,34 @@ footer {
 
 .carousel-images {
     display: flex;
-    overflow-x: hidden; 
-    scroll-snap-type: x mandatory; 
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-    width: 100%; 
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
 }
 
 .carousel-item {
-    flex: 0 0 auto; /* No crece ni se encoge, tamaño fijo */
-    scroll-snap-align: start; /* Alineación de desplazamiento */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-right: 20px; /* Espacio entre imágenes */
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .carousel-item img {
-    width: 190px; /* Tamaño inicial de las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.2s ease; /* Transición suave para el efecto de escala */
+    width: 190px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
 }
 
 .carousel-images img.enlarge {
-    transform: scale(1.2); /* Efecto de escala al hacer hover */
+    transform: scale(1.2);
+    border-radius: 10px
+
 }
 
 .carousel {
-    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    overflow: hidden;
 }
 
 
-
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    }
